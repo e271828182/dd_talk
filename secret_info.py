@@ -1,2 +1,2 @@
-CORPSECRET = 'xxx'
+CORPSECRET = 'lxeyuh5CJaVjQ1jheAKmY77iEvoO5YtIeHuGcBCsYZRfdK6Y_LyaaXtLgSzpVjou'
 CORPID = 'dingcd586d15e8bfef5d35c2f4657eb6378f'
