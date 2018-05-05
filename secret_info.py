@@ -1,1 +1,2 @@
 CORPSECRET = 'xxx'
+CORPID = 'dingcd586d15e8bfef5d35c2f4657eb6378f'

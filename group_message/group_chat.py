@@ -2,11 +2,12 @@
 import requests
 import json
 from secret_info import CORPSECRET
+from secret_info import CORPID
 
 
 def get_access_token():
     # post请求 表单格式数据
-    corpid = 'dingcd586d15e8bfef5d35c2f4657eb6378f'
+    corpid = CORPID
     # 填写企业号密码
     corpsecret = CORPSECRET
     req = requests.get("https://oapi.dingtalk.com/gettoken?corpid=%s&corpsecret=%s" % (corpid, corpsecret))
