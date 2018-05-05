@@ -1,1 +1,1 @@
-CORPSECRET = 'lxeyuh5CJaVjQ1jheAKmY77iEvoO5YtIeHuGcBCsYZRfdK6Y_LyaaXtLgSzpVjou'
+CORPSECRET = 'xxx'
