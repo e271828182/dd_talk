@@ -2,6 +2,7 @@
 import requests
 import json
 import urllib
+from secret_info import CORPSECRET
 
 # 简单的get请求
 req = requests.get(url='http://www.baidu.com')
@@ -50,7 +51,7 @@ if req.status_code == 200:
 # post请求 表单格式数据
 corpid = 'dingcd586d15e8bfef5d35c2f4657eb6378f'
 # 填写企业号密码
-corpsecret = 'xxx'
+corpsecret = CORPSECRET
 req = requests.get("https://oapi.dingtalk.com/gettoken?corpid=%s&corpsecret=%s"%(corpid, corpsecret))
 if req.status_code == 200:
     print(req.text)

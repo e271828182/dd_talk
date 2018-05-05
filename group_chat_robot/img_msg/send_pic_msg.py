@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import requests
 import json
-
+from secret_info import CORPSECRET
 
 def send_msg(title, t, url, mobiles=[]):
     dd_content = {
@@ -23,7 +23,7 @@ def get_access_token():
     # post请求 表单格式数据
     corpid = 'dingcd586d15e8bfef5d35c2f4657eb6378f'
     # 填写企业号密码
-    corpsecret = 'xxx'
+    corpsecret = CORPSECRET
     req = requests.get("https://oapi.dingtalk.com/gettoken?corpid=%s&corpsecret=%s" % (corpid, corpsecret))
     if req.status_code == 200:
         print(req.text)
