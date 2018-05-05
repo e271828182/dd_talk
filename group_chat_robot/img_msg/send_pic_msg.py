@@ -3,7 +3,7 @@ import requests
 import json
 
 
-def alarm_dd(title, t, url, mobiles=[]):
+def send_msg(title, t, url, mobiles=[]):
     dd_content = {
         "msgtype": "markdown",
         "at": {
@@ -39,6 +39,7 @@ def upload_pic(image_file):
     return media_id
 
 
-dd_robot_url = 'https://oapi.dingtalk.com/robot/send?access_token=33e573e59594249cdbbdf854a3e2d6326e155e3df811c2fc5191cd8041ba337e'
-text = u'![](%s)' % upload_pic('123.png')
-alarm_dd(title=u'消息来了', t=text, url=dd_robot_url, mobiles=['15150375379'])
+if __name__ == '__main__':
+    dd_robot_url = 'https://oapi.dingtalk.com/robot/send?access_token=33e573e59594249cdbbdf854a3e2d6326e155e3df811c2fc5191cd8041ba337e'
+    text = u'![](%s)' % upload_pic('123.png')
+    send_msg(title=u'消息来了', t=text, url=dd_robot_url, mobiles=['15150375379'])
